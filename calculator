@@ -1,0 +1,25 @@
+#Test version calculator v 1.0
+
+from colorama import init
+from colorama import Fore, Back, Style
+init()
+print(Back.CYAN)
+print(Fore.BLACK)
+name = input("Please, enter your name: ")
+print("Hello,"+name)
+d = input("What operation we will do? ( + - / *)?")
+a = float(input("Input first number: "))
+b= float(input("Input second number: "))
+if d == "+":
+	c = a + b
+elif d == "-":
+	c = a-b
+elif d == "/":
+	c = a/b
+elif d == "*":
+	c = a*b
+else:
+	print("Wrong command")
+print (c)
+
+input()
